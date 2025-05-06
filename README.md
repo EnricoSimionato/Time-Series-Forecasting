@@ -1,7 +1,7 @@
 # Artificial Neural Networks and Deep Learning-2023/2024
 <img src="./Assets/bannerAN2DL.png" width="100%"/>
 
-Repository of the `Artificial Neural Networks and Deep Learning (AN2DL)` project with focus in **Image Classification** and **Time Series Forecasting**. The associated challenge was hosted on CodaLab platform.
+Repository of the `Artificial Neural Networks and Deep Learning (AN2DL)` project with focus in **Time Series Forecasting**. The associated challenge was hosted on CodaLab platform.
 
 ## Team
 <table align="center">
@@ -28,46 +28,9 @@ Repository of the `Artificial Neural Networks and Deep Learning (AN2DL)` project
 
 
 ## Project structure
-The project is divided in two homeworks, each one of them is contained in a single Jupyter Notebook in the respective folder. The homeworks are the following:
+The project is divided in two homeworks, this repository contains the second part. The project code is contained in a single Jupyter Notebook.
 
-### 1. **Homework 1 - Plant Images Classification**: 
-
-This homework addresses the task of plant health classification through the use of deep neural networks. The project aims to categorize images of plants as either healthy or unhealthy. Here is a succinct overview of the main contributions and findings:
-
-- #### Data Processing
-
-  - Initial data inspection led to the removal of outliers and duplicates, resulting in a preprocessed dataset of 4850 RGB images (96x96).
-  - The dataset exhibits a slight imbalance, with 63.09% healthy plants.
-
-- #### Best Model - ConvNeXt
-
-  - Utilized a ConvNeXt base model, achieving a remarkable 94% accuracy on the CodaLab development phase.
-  - Incorporated transfer learning and fine-tuning, data augmentation, and sample weight balancing for enhanced model robustness.
-  - ConvNeXt demonstrated stability in training and resilience to overfitting.
-
-- #### Experiments
-
-  - Explored diverse augmentation techniques, focusing on geometric transformations given the significance of color variations.
-  - Conducted experiments with modern augmentation methods (MixUp and CutMix) for effective regularization during training.
-  - Adjusted the classification threshold to 0.65 using ROC analysis, improving recall and prioritizing unhealthy plant classification.
-  - Implemented test-time augmentation for increased invariance to transformations, resulting in a 2-3% improvement in evaluation metrics.
-
-- #### EfficientNet Models
-
-  - Explored EfficientNet models (B0, B4, B7) as feature extraction networks, noting high performance and faster training.
-  - Encountered stability issues in submission accuracy despite consistent results on the holdout test set.
-
-- #### Ensemble Methods
-
-  - Explored ensemble methods, including bootstrapping and model combinations, with limited observed improvement.
-  - Constructed an ensemble with ConvNeXt models using majority and soft voting, but collective performance did not surpass the best individual model.
-
-- #### Explainability
-
-  - Employed the LIME library for model explainability, revealing crucial features for classification in unhealthy plant images. 
-
-
-### 2. **Homework 2 - Time Series Forecasting**: 
+### Time Series Forecasting**: 
 
 This homework addresses the challenge of time series forecasting using various deep neural networks. The objective is to forecast the future 9 and 18 samples of time series, that in the test set have length 200. The metric used to evaluate models is the Mean Squared Error. Here an outline of methods, techniques, and results:
 
@@ -124,12 +87,8 @@ pip install -r requirements.txt
 <pre>
 ├── Assets
 │   └── bannerAN2DL.png
-├── Homework 1 - Plant Images Classification
-│   ├── ANNDL-Homework1-Report.pdf
-│   └── Homework_1.ipynb
-├── Homework 2 - Time Series Forecasting
-│   ├── ANNDL-Homework2-Report.pdf
-│   └── Homework_2.ipynb
+├── ANNDL-Homework2-Report.pdf
+├── Homework_2.ipynb
 ├── README.md
 └── requirements.txt
 </pre>
