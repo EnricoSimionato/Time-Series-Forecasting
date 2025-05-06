@@ -1,4 +1,4 @@
-# Artificial Neural Networks and Deep Learning-2023/2024
+# Time Series Forecasting
 <img src="./Assets/bannerAN2DL.png" width="100%"/>
 
 Repository of the `Artificial Neural Networks and Deep Learning (AN2DL)` project with focus in **Time Series Forecasting**. The associated challenge was hosted on CodaLab platform.
@@ -30,7 +30,7 @@ Repository of the `Artificial Neural Networks and Deep Learning (AN2DL)` project
 ## Project structure
 The project is divided in two homeworks, this repository contains the second part. The project code is contained in a single Jupyter Notebook.
 
-### Time Series Forecasting: 
+### Description of the project:
 
 This homework addresses the challenge of time series forecasting using various deep neural networks. The objective is to forecast the future 9 and 18 samples of time series, that in the test set have length 200. The metric used to evaluate models is the Mean Squared Error. Here an outline of methods, techniques, and results:
 
